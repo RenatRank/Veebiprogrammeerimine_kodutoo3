@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodutöö3</title>
+    <link rel="stylesheet" href="style.css">
+    <?php wp_head(); ?>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1><?php echo get_bloginfo('name');?></h1>
+    <?php wp_nav_menu(array(
+        'theme_location' => 'links-menu',
+        'menu_class' => 'myNavList'
+        ));?>
+</header>
